@@ -9,7 +9,7 @@ def ball_animation():
     if ball.top <= 0 or ball.bottom >= screen_height:
         ball_speed_y *= -1
 
-    # player score
+
     if ball.left <= 0:
         player_score += 1
         score_time = pygame.time.get_ticks()
@@ -74,12 +74,12 @@ def ball_start():
         score_time = None
 
 
-# normal game set up
+
 pygame.mixer.pre_init()
 pygame.init()
 clock = pygame.time.Clock()
 
-# to set the screen size of the main window
+
 screen_width = 1280
 screen_height = 800
 screen = pygame.display.set_mode((screen_width, screen_height))
